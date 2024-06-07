@@ -56,7 +56,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Beyond Reference-Based Metrics:<br>Analyzing Behaviors of Open LLMs
+            <h1 class="title is-1 publication-title">Beyond Traditional Benchmarks:<br>Analyzing Behaviors of Open LLMs
               on Data-to-Text Generation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -158,13 +158,12 @@
             <p>
               We analyze the behaviors of open large language models (LLMs) on the task of data-to-text (D2T)
               generation, i.e., generating coherent and relevant text from structured data. To avoid the issue of LLM
-              training data contamination with standard benchmarks, we design Quintd – a tool for collecting novel
-              structured data records from public APIs. Using a dataset collected with Quintd and leveraging
-              reference-free evaluation, we analyze model behaviors on five D2T generation tasks. We find that recent
-              open LLMs (Llama2, Mistral, and Zephyr) can generate fluent and coherent text from standard data formats
-              in zero-shot settings. However, we also show that the semantic accuracy of the outputs is a major issue:
-              both according to our GPT-4-based metric and human annotators, more than 80% of the outputs of open LLMs
-              contain a semantic error. We publicly release the code, data, and model outputs.
+              training data contamination with standard benchmarks, we design Quintd - a tool for collecting novel
+              structured data records from public APIs. We find that open LLMs (Llama 2, Mistral, and Zephyr) can
+              generate fluent and coherent texts in zero-shot settings from data in common formats collected with
+              Quintd. However, we show that the semantic accuracy of the outputs is a major issue: both according to
+              human annotators and our reference-free metric based on GPT-4, more than 80% of the outputs of open LLMs
+              contain at least one semantic error. We publicly release the code, data, and model outputs.
             </p>
           </div>
         </div>
@@ -197,14 +196,16 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{kasner2024referencebased,
-    title={Beyond Reference-Based Metrics: Analyzing Behaviors of Open LLMs on Data-to-Text Generation}, 
-    author={Zdeněk Kasner and Ondřej Dušek},
-    year={2024},
-    eprint={2401.10186},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}</code></pre>
+      <pre><code>```
+        @inproceedings{kasnerReferenceBasedMetricsAnalyzing2024,
+         title     = {Beyond {{Traditional Benchmarks}}: {{Analyzing Behaviors}} of {{Open LLMs}} on {{Data-to-Text Generation}}},
+         author    = {Kasner, Zden{\v e}k and Du{\v s}ek, Ond{\v r}ej},
+         booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+         year      = {2024},
+         note      = {To appear},
+         url       = {http://arxiv.org/abs/2401.10186}
+        }
+        </code></pre>
     </div>
   </section>
   <!--End BibTex citation -->
